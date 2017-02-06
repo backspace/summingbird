@@ -9,7 +9,7 @@ env:
 matrix:
   include:
     - scala: 2.11.6
-      script: ./sbt -Dlog4j.configuration=$LOG4J ++$TRAVIS_SCALA_VERSION clean coverage test coverageReport mimaReportBinaryIssues
+      script: ./sbt ++$TRAVIS_SCALA_VERSION compile
       after_success:
         - bash <(curl -s https://codecov.io/bash)
 
