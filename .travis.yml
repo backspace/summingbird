@@ -1,3 +1,4 @@
+# A comment
 language: scala
 sudo: false
 before_install: umask 0022
